@@ -1,1 +1,616 @@
-Hi
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	
+<!-- Mirrored from 127.0.0.1/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 09:46:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>Unblocked Games 66 ez | Play Online Games</title>
+		<meta name="description" content="Play Online Games for Free">
+		<link rel="canonical" href="index.html" />
+								<link rel="stylesheet" type="text/css" href="content/themes/default/style/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="content/themes/default/style/jquery-comments.css" />
+		<link rel="stylesheet" type="text/css" href="content/themes/default/style/user.css" />
+		<link rel="stylesheet" type="text/css" href="content/themes/default/style/style.css" />
+		<link rel="stylesheet" type="text/css" href="content/themes/default/style/custom.css" />
+		<!-- Font Awesome icons (free version)-->
+		<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+				<style>
+.input-group {
+display: none;
+}
+</style>	</head>
+	<body id="page-top">
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
+			<div class="container">
+				<button id="toggler" class="navbar-toggler navbar-toggler-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navb" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/site-logo.png" class="site-logo" alt="site-logo"></a>
+				<div class="navbar-collapse collapse justify-content-end" id="navb">
+	<ul class="navbar-nav ml-auto">
+				<li class="nav-item"></li>	</ul>
+	<form class="form-inline my-2 my-lg-0 search-bar" action="https://127.0.0.1/index.php">
+		<div class="input-group">
+			<input type="hidden" name="viewpage" value="search" />
+			<input type="text" class="form-control rounded-left search" placeholder="Search game" name="slug" minlength="2" required />
+			<div class="input-group-append">
+				<button type="submit" class="btn btn-secondary btn-search" type="button">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+	</form>
+</div>							</div>
+		</nav>
+		<div class="nav-categories">
+			<div class="container">
+				<nav class='greedy'>
+	<ul class="links list-categories"><a href="category/-io.html"><li>.IO</li></a><a href="category/adventure.html"><li>Adventure</li></a><a href="category/agility.html"><li>Agility</li></a><a href="category/arcade.html"><li>Arcade</li></a><a href="category/battle.html"><li>Battle</li></a><a href="category/boys.html"><li>Boys</li></a><a href="category/bubble-shooter.html"><li>Bubble Shooter</li></a><a href="category/casual.html"><li>Casual</li></a><a href="category/football.html"><li>Football</li></a><a href="category/hypercasual.html"><li>Hypercasual</li></a><a href="category/match-3.html"><li>Match-3</li></a><a href="category/puzzle.html"><li>Puzzle</li></a><a href="category/racing.html"><li>Racing</li></a><a href="category/racing---driving.html"><li>Racing & Driving</li></a><a href="category/shooter.html"><li>Shooter</li></a><a href="category/shooting.html"><li>Shooting</li></a><a href="category/simulation.html"><li>Simulation</li></a><a href="category/sports.html"><li>Sports</li></a><a href="category/strategy.html"><li>Strategy</li></a></ul>	<button>MORE</button>
+  	<ul class='hidden-links hidden'></ul>
+</nav>			</div>
+		</div><div class="container">
+	<div class="game-container" id="home-game-container">
+		<style>
+.search-container {
+   
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+    margin: auto;
+  border-style: solid;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-results-overlay {
+    position: absolute;
+    top: 40px; /* Adjust to position below the search box */
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+    display: none;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-item {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+</style><!-- Search Bar -->
+<div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search games..." oninput="performSearch()">
+    <div id="search-results-overlay" class="search-results-overlay" style="display: none;"></div>
+</div><script>
+// search script for unblocked66ez
+document.addEventListener('DOMContentLoaded', () => {
+    fetchSitemapData();
+});
+
+let gameData = [];
+
+// Function to fetch and parse the sitemap.xml
+function fetchSitemapData() {
+    fetch('sitemap.xml') // Ensure the correct path to your sitemap.xml
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, 'application/xml');
+            const locElements = xml.getElementsByTagName('loc');
+            
+            // Extract titles and URLs from the sitemap
+            gameData = Array.from(locElements).map(loc => {
+                const url = loc.textContent.trim();
+                const title = generateTitleFromURL(url);
+                return { title, url };
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching or parsing sitemap:', error);
+        });
+}
+
+// Function to generate a title from the URL
+function generateTitleFromURL(url) {
+    // Extract the last segment of the URL and format it as a title
+    const lastSegment = url.split('index.html').pop().replace('.html', '');
+    const title = lastSegment.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
+    return title;
+}
+
+// Search function to filter and display results
+function performSearch() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const resultsOverlay = document.getElementById('search-results-overlay');
+    
+    // Clear previous results
+    resultsOverlay.innerHTML = '';
+    
+    if (query.length < 2) {
+        resultsOverlay.style.display = 'none';
+        return;
+    }
+
+    // Filter titles based on the query
+    const filteredGames = gameData.filter(game => game.title.toLowerCase().includes(query));
+
+    // Display results in the overlay
+    if (filteredGames.length > 0) {
+        filteredGames.forEach(game => {
+            const resultItem = document.createElement('div');
+            resultItem.className = 'search-result-item';
+            resultItem.textContent = game.title; // Display the title
+            resultItem.onclick = () => {
+                // Navigate to the URL of the selected game
+                window.location.href = game.url;
+            };
+            resultsOverlay.appendChild(resultItem);
+        });
+        resultsOverlay.style.display = 'block';
+    } else {
+        resultsOverlay.style.display = 'none';
+    }
+}
+
+// Hide the overlay when clicking outside of it
+document.addEventListener('click', function(event) {
+    const overlay = document.getElementById('search-results-overlay');
+    if (!event.target.closest('.search-container')) {
+        overlay.style.display = 'none';
+    }
+});
+
+</script>		<h3 class="item-title"><i class="fas fa-plus" aria-hidden="true"></i>NEW GAMES</h3>
+		<div class="row" id="section-new-games">
+							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/cookie-clicker.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://cdn.mobygames.com/81e2db96-abfc-11ed-b206-02420a000131.webp" class="small-thumb lazyload" alt="Cookie Clicker"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Cookie Clicker</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/1v1-lol.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://drifthunters2.io/cache/data/image/game/1v1%20LOL-m150x150.webp" class="small-thumb lazyload" alt="1v1 Lol."></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">1v1 Lol.</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/soccer-dash.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/5772350f4ea345959c4e56a24d94ee42-512x512.jpg" class="small-thumb lazyload" alt="Soccer Dash"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Soccer Dash</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/alien-hunters.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/cf59e43efe374ec8b434aa872a24b68d-512x512.jpg" class="small-thumb lazyload" alt="Alien Hunters"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Alien Hunters</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/hand-over-hand.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/4f649e5ef80f4e3b9ff2b454781447d9-512x512.jpg" class="small-thumb lazyload" alt="Hand Over Hand"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Hand Over Hand</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/real-flight-simulator.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/453b87e02c9148909304762f18b699f5-512x512.jpg" class="small-thumb lazyload" alt="Real Flight Simulator"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Real Flight Simulator</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/supermarket-manager-simulator.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/5dff4319bd2845c781cd3378d86735ed-512x512.jpg" class="small-thumb lazyload" alt="Supermarket Manager Simulator"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Supermarket Manager Simulator</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/save-the-sheep.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/f239774123b54a59bb6f31c2713f2020-512x512.jpeg" class="small-thumb lazyload" alt="Save The Sheep"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Save The Sheep</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/tower-of-fall.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/62a7de5d75fc4521b699f4a25de349d4-512x512.jpg" class="small-thumb lazyload" alt="Tower of Fall"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Tower of Fall</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/mustang-city-driver.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/61c083cddba04c11b2262b0530aad11b-512x512.jpg" class="small-thumb lazyload" alt="Mustang City Driver"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Mustang City Driver</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/draw-bridge-challenge.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/c0d7138391e14de091894c3e19b2c30b-512x512.jpeg" class="small-thumb lazyload" alt="Draw Bridge Challenge"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Draw Bridge Challenge</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/school-bus-game-driving-sim.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/2082e2d015004edaaba7472330badcef-512x512.jpg" class="small-thumb lazyload" alt="School Bus Game Driving Sim"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">School Bus Game Driving Sim</div>
+		</div>
+	</div>
+	</a>
+</div>					</div>
+		<!-- Load more games -->
+		<div class="load-more-games-wrapper">
+			<!-- Template -->
+			<div class="item-append-template" style="display: none;">
+				<div class="col-md-2 col-sm-3 col-4 item-grid">
+					<a href="game/%7b%7bslug%7d%7d.html">
+					<div class="list-game">
+						<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="{{thumbnail}}" class="small-thumb lazyload" alt="{{title}}"></div>
+						<div class="list-content">
+							<div class="star-rating text-center"><img src="content/themes/default/images/star-%7b%7brating%7d%7d.html" alt="rating"></div>
+							<div class="list-title">{{title}}</div>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<!-- The button -->
+			<div class="btn btn-primary btn-load-more-games">
+				Load more games <i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</div>
+		</div>
+		<h3 class="item-title"><i class="fa fa-certificate" aria-hidden="true"></i>POPULAR GAMES</h3>
+		<div class="row">
+							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/hill-climbing.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/v33fk4a7b97riw532yhhg9gnawsqrhvn/512x512.jpg" class="small-thumb lazyload" alt="Hill Climbing"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Hill Climbing</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/moto-x3m.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/mim4uot21hygwai6uek2u1t2ovb3lkzd/512x512.jpg" class="small-thumb lazyload" alt="Moto X3M"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Moto X3M</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/real-football-champions-league-football-strike.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/w21x5jncw29eo0yjbnpy6wcbux6yxxyu/512x512.jpg" class="small-thumb lazyload" alt="REAL FOOTBALL CHAMPIONS LEAGUE Football Strike"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">REAL FOOTBALL CHAMPIONS LEAGUE Football Strike</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/cricket-legends.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/0btdcgcm830ab5rmoxr64a9oozxfjvbh/512x512.jpg" class="small-thumb lazyload" alt="Cricket Legends"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Cricket Legends</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/world-cricket-stars.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/bja57ua28tfswxbxkdyfn3wn8go77u5j/512x512.jpg" class="small-thumb lazyload" alt="World Cricket Stars"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">World Cricket Stars</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/dumb-pacman.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/3uwoe2havsewdy7r15l1nz226qbvrqvv/512x512.jpg" class="small-thumb lazyload" alt="Dumb Pacman"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Dumb Pacman</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/snake-io-angry-slither-worm.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/cq1w4465kb23vvz3xykws4db3ax5bz6n/512x512.jpg" class="small-thumb lazyload" alt="Snake.IO : Angry Slither Worm"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Snake.IO : Angry Slither Worm</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/vector.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/sx4buiaee7apxpafml0oiq2uatyby9sq/512x512.jpg" class="small-thumb lazyload" alt="Vector"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-3.png" alt="rating"></div>
+			<div class="list-title">Vector</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/cube-adventure-run.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/dec1iei9ohuvd7fm4njkm7tkugsydmb2/512x512.jpg" class="small-thumb lazyload" alt="Cube Adventure Run"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Cube Adventure Run</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/death-race-2.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/27h0ychuz5jn1y5c6kqbfr0lx3waejvu/512x512.jpg" class="small-thumb lazyload" alt="Death Race 2"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Death Race 2</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/cricket-2020.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/r64ona0n0wrrsa0bo0d30nl5u8hjnwef/512x512.jpg" class="small-thumb lazyload" alt="Cricket 2020"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Cricket 2020</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/master-chess-multiplayer.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/0j27h8fp1no93ybdnpp61khjmpgubcqb/512x512.jpg" class="small-thumb lazyload" alt="Master Chess Multiplayer"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Master Chess Multiplayer</div>
+		</div>
+	</div>
+	</a>
+</div>					</div>
+		<h3 class="item-title"><i class="fa fa-gamepad" aria-hidden="true"></i>YOU MAY LIKE</h3>
+		<div class="row">
+							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/roll-sky-ball-3d.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/bo8aj5rw7esbj1gtkl7lt3obzivfi2mz/512x512.jpg" class="small-thumb lazyload" alt="Roll Sky Ball 3D"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Roll Sky Ball 3D</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/sniper-combat-3d.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/3751d5ed0f6b4b8f9331f148f9af52b2-512x512.jpg" class="small-thumb lazyload" alt="SNIPER COMBAT 3D"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">SNIPER COMBAT 3D</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/tic-tac-toe-1-4-player.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/6fyc84iea9je8h4wqtw8avq5a0sgfrpm/512x512.jpg" class="small-thumb lazyload" alt="Tic Tac Toe 1-4 Player"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Tic Tac Toe 1-4 Player</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/block-puzzle-jewel-forest.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/a66111e097d24ffeb92f45161f21db29-512x512.jpg" class="small-thumb lazyload" alt="Block Puzzle - Jewel Forest"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Block Puzzle - Jewel Forest</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/easter-hidden-stars.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/9b8ou4k3r1xlfbhv4pzwpnv931lrr7qp/512x512.jpg" class="small-thumb lazyload" alt="Easter Hidden Stars"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Easter Hidden Stars</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/gyro-maze-3d.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/2nhs3r7tm0apiqdw8vvz8h9dvn3uo1xm/512x512.jpg" class="small-thumb lazyload" alt="Gyro Maze 3d"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Gyro Maze 3d</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/hill-climbing.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/v33fk4a7b97riw532yhhg9gnawsqrhvn/512x512.jpg" class="small-thumb lazyload" alt="Hill Climbing"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Hill Climbing</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/one-bit.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/bhgysistyfih290cgcv3vsoamvlrk99t/512x512.jpg" class="small-thumb lazyload" alt="One Bit"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">One Bit</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/alien-hunters.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/cf59e43efe374ec8b434aa872a24b68d-512x512.jpg" class="small-thumb lazyload" alt="Alien Hunters"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Alien Hunters</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/drift-boss.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/0a8b51e5eaee42e7b4db83ca00afc92e-512x512.jpg" class="small-thumb lazyload" alt="DRIFT BOSS"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">DRIFT BOSS</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/duty-call-modern-warfate-2.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamemonetize.com/i1h4zxt1z2bfk78s3xxbkhxon6pepuw7/512x512.jpg" class="small-thumb lazyload" alt="Duty Call Modern Warfate 2"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-5.png" alt="rating"></div>
+			<div class="list-title">Duty Call Modern Warfate 2</div>
+		</div>
+	</div>
+	</a>
+</div>							<div class="col-md-2 col-sm-3 col-4 item-grid">
+	<a href="game/only-up.html">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="content/themes/default/images/thumb-placeholder1.png" data-src="https://img.gamedistribution.com/ec5a0aa39f5c4cd19d1e6153de22650d-512x512.jpg" class="small-thumb lazyload" alt="Only Up"></div>
+		<div class="list-content">
+			<div class="star-rating text-center"><img src="content/themes/default/images/star-0.png" alt="rating"></div>
+			<div class="list-title">Only Up</div>
+		</div>
+	</div>
+	</a>
+</div>					</div>
+			</div>
+	<div class="mb-4 mt-4 hp-bottom-container">
+		<h2 class="">Your Unblocked Games 66ez Playground for Online Games - Get Ready to Play! 
+</h2><p>Welcome to the amazing world of online gaming,🎮 where excitement knows no boundaries and enjoyment is just a few clicks of a click away! </p>
+	</div>
+</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer-1">
+											</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-2">
+											</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-3">
+											</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-4">
+											</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright py-4 text-center text-white">
+		<div class="container">
+			<p><a href="https://unblockedgame66ez.github.io/">Unblocked Games 66ez</a> © 2024. All rights reserved.</p>			<span class="dsb-panel">
+				V-1.9.2			</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="content/themes/default/js/jquery-3.6.2.min.js"></script>
+	<script type="text/javascript" src="content/themes/default/js/lazysizes.min.js"></script>
+	<script type="text/javascript" src="content/themes/default/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/comment-system.js"></script>
+	<script type="text/javascript" src="content/themes/default/js/script.js"></script>
+	<script type="text/javascript" src="content/themes/default/js/custom.js"></script>
+	<script type="text/javascript" src="js/stats.js"></script>
+		  </body>
+
+<!-- Mirrored from 127.0.0.1/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 09:46:51 GMT -->
+</html>
